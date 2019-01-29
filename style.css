@@ -1,0 +1,380 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* font-family: 'Roboto', sans-serif;
+
+font-family: 'Cormorant Garamond', serif;
+
+font-family: 'Fredericka the Great', cursive; */
+
+html {
+    font-size: 125%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    /* border: 1px solid red; */
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER STYLES START HERE */
+header {
+    background: url(assets/image-1@2x.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+ul.topNav {
+    padding-top: 20px;
+}
+
+ul.topNav li {
+   /* border: 1px solid green; */
+   float: left;
+   padding: 0 10px;
+}
+
+ul.topNav:first-child {
+    margin-left: -20px;
+}
+
+ul.topNav a {
+    /* border: 1px solid yellow; */
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    padding: 5px;
+    /* font-size: 1.1rem; */
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 120px;
+    font-size: 6rem;
+    line-height: 117px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #ffffff;
+    float: right;
+    text-align: right;
+    width: 500px;
+}
+
+ul.socialMedia {
+    float: right;
+    margin: 200px 30px 0 0;
+    text-align: center;
+}
+
+ul.socialMedia i {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    padding: 3px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SUZIE'S STORY STARTS HERE */
+.suziesStory {
+    background: #152d20;
+    padding: 110px 0;
+}
+
+.suziesStory .img {
+    width: 315px;
+    float: left;
+}
+
+.suziesStory .text {
+    /* border: 1px solid yellow; */
+    margin-left: 40px;
+    margin-top: -10px;
+    float: left;
+    max-width: calc(100% - 355px)
+}
+
+.suziesStory h2 {
+    font-size: 2.55rem;
+    font-family: 'Fredericka the Great', cursive;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: lighter;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.suziesStory p {
+    color: #ffffff;
+    float: left;
+    line-height: 1.45rem;
+    margin: 18px 0 32px 0;
+}
+
+.suziesStory a {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    color: #152d20;
+    float: left;
+    padding: 15px 30px;
+    background: #ffffff;
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+/* FRIENDS SECTION STARTS HERE */
+.friends {
+    background: #c3d3cb;
+    padding-bottom: 109px;
+}
+
+.friends .img {
+    float: left;
+    margin: 0 15px;
+    max-width: calc(33.33% - 30px);
+}
+
+.friends .gallery {
+    margin: 0 -20px;
+}
+
+.friends h2 {
+    margin: 0 auto;
+    padding: 98px 0 93px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.55rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #152d20;
+    max-width: 481px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+/* threeLinks Section Starts HERE */
+.threeLinks {
+    background: #152d20;
+    padding: 85px 0 50px;
+}
+
+.threeLinks .wrapper {
+    text-align: center;
+}
+
+.threeLinks .link {
+    margin: 0 auto;
+    width: 33.33%;
+    float: left;
+}
+
+.threeLinks a {
+    color: #ffffff;
+    text-align: center;
+}
+
+.threeLinks i {
+    font-size: 2rem;
+}
+
+.threeLinks p {
+    font-size: 1.95rem;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* imagesAndText SECTION STARTS HERE */
+.imagesAndText .text, .picture {
+    max-width: 50%;
+    float: left;
+}
+
+.imagesAndText .wrapper {
+    width: 75%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    /* border: 1px solid red; */
+}
+
+.imagesAndText .text h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #152d20;
+    text-transform: uppercase;
+    margin: 0;
+    width: 85%;
+
+}
+
+.imagesAndText p {
+    color: #1f2022;
+    line-height: 1.25rem;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+}
+
+.imagesAndText a {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 25px;
+    background: #152d20;
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+/* FOOTER STARTS HERE */
+footer {
+    background: #152d20;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    /* float: left; */
+}
+
+.form {
+    text-align: center;
+    color: #ffffff;
+}
+
+.form h3 {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+.form p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
+}
+
+form input[type='submit'] {
+    background: #000000;
+    color: #ffffff;
+}
+
+footer .contact {
+    /* float: right; */
+    text-align: right;
+}
+
+footer .wrapper > * {
+    float: left;
+    /* width: 33.33%; */
+    margin: 0 auto;
+}
+
+nav {
+    width: 25%;
+}
+
+.form {
+    width: 50%;
+}
+
+.contact {
+    width: 25%;
+}
+
+#email {
+    width: 100%;
+}
