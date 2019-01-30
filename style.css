@@ -64,6 +64,10 @@ ul {
 
 
 
+
+
+
+
 /* HEADER STYLES START HERE */
 header {
     background: url(assets/image-1@2x.jpg) center no-repeat;
@@ -75,31 +79,31 @@ header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
 
 ul.topNav {
     padding-top: 20px;
+    margin-left: -20px;
+    float: left;
+    width: 500px;
 }
 
 ul.topNav li {
-   /* border: 1px solid green; */
    float: left;
    padding: 0 10px;
 }
 
-ul.topNav:first-child {
-    margin-left: -20px;
-}
-
 ul.topNav a {
-    /* border: 1px solid yellow; */
     color: #ffffff;
     text-decoration: none;
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
     padding: 5px;
-    /* font-size: 1.1rem; */
+    transition: all .3s;
+}
+
+header a:hover {
+    color: #666666;
 }
 
 h1 {
@@ -117,6 +121,10 @@ h1 {
     width: 500px;
 }
 
+.hamMenu {
+    display: none;
+}
+
 ul.socialMedia {
     float: right;
     margin: 200px 30px 0 0;
@@ -128,7 +136,13 @@ ul.socialMedia i {
     font-size: 1.1rem;
     margin: 5px 0;
     padding: 3px 0;
+    transition: all .3s;
 }
+
+header i:hover {
+    color: #666666;
+}
+
 
 
 
@@ -174,7 +188,7 @@ ul.socialMedia i {
     color: #ffffff;
     float: left;
     line-height: 1.45rem;
-    margin: 18px 0 32px 0;
+    margin: 10px 0 25px 0;
 }
 
 .suziesStory a {
@@ -185,6 +199,12 @@ ul.socialMedia i {
     padding: 15px 30px;
     background: #ffffff;
     border-radius: 1px;
+    transition: all .3s;
+}
+
+.suziesStory a:hover {
+    background: #152d20;
+    color: #ffffff;
 }
 
 
@@ -251,6 +271,7 @@ ul.socialMedia i {
 .threeLinks a {
     color: #ffffff;
     text-align: center;
+    transition: all .3s;
 }
 
 .threeLinks i {
@@ -261,10 +282,13 @@ ul.socialMedia i {
     font-size: 1.95rem;
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
-    margin: 20px 0 0;
+    margin: 0;
+    padding: 20px 0 0;
 }
 
-
+.link a:hover {
+    color: #666666;
+}
 
 
 
@@ -277,6 +301,10 @@ ul.socialMedia i {
 .imagesAndText .text, .picture {
     max-width: 50%;
     float: left;
+}
+
+.pictureMobile {
+    display: none;
 }
 
 .imagesAndText .wrapper {
@@ -295,7 +323,6 @@ ul.socialMedia i {
     text-transform: uppercase;
     margin: 0;
     width: 85%;
-
 }
 
 .imagesAndText p {
@@ -312,7 +339,19 @@ ul.socialMedia i {
     padding: 10px 25px;
     background: #152d20;
     border-radius: 1px;
+    transition: all .3s;
 }
+
+.imagesAndText a:hover {
+    background: #ffffff;
+    color: #152d20;
+}
+
+
+
+
+
+
 
 
 
@@ -323,12 +362,28 @@ ul.socialMedia i {
 /* FOOTER STARTS HERE */
 footer {
     background: #152d20;
+    padding-top: 100px;
 }
 
 footer ul {
     margin: 0;
     padding: 0;
-    /* float: left; */
+}
+
+footer ul li:first-child {
+    padding-top: 0;
+}
+
+footer li {
+    padding: 5px 0;
+}
+
+footer li:nth-of-type(2) {
+    display: none;
+}
+
+footer li a {
+    transition: all .3s;
 }
 
 .form {
@@ -339,42 +394,472 @@ footer ul {
 .form h3 {
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
+    margin: 0 0 15px;
 }
 
 .form p {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-
+    margin-top: 0;
 }
 
-form input[type='submit'] {
-    background: #000000;
+#email {
+    width: 72%;
+    padding: 10px 35px; 
+    float: left;
+}
+
+button {
+    width: 28%;
     color: #ffffff;
+    background: #000000;
+    border: none;
+    padding: 12px 0;
+    height: 100%;
+    font-size: 0.9rem;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+button:hover {
+    background: #191919;
 }
 
 footer .contact {
-    /* float: right; */
     text-align: right;
 }
 
 footer .wrapper > * {
     float: left;
-    /* width: 33.33%; */
     margin: 0 auto;
 }
 
-nav {
-    width: 25%;
+footer nav {
+    width: 20%;
 }
 
 .form {
-    width: 50%;
+    width: 48%;
 }
 
 .contact {
+    width: 32%;
+}
+
+.contact p:nth-of-type(1) {
+    padding: 0 4px;
+}
+
+.contact a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-transform: lowercase;
+    transition: all .3s;
+}
+
+footer a:hover {
+    color: #666666;
+}
+
+.contact h3 {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 15px;
+}
+
+.contact p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.45rem;
+    margin: 0;
+}
+.copywrite p {
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    margin: 100px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET MEDIA QUERY STARTS HERE */
+@media (max-width: 1134px) {
+
+.imagesAndText .text {
+    max-width: 100%;
+    text-align: center;
+}
+
+.picture {
+    display: none;
+}
+
+.pictureMobile {
+    display: block;
+}
+
+.imagesAndText .wrapper {
+    width: 85%;
+    margin-bottom: 10%;
+    /* border: 1px solid red; */
+}
+
+.imagesAndText .text h2 {
+    margin: 0 auto;
+
+}
+
+.form {
+    width: 45%;
+}
+
+.contact {
+    width: 35%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1037px) {
+header h1 {
+    font-size: 4rem;
+    line-height: 80px;
+}
+
+.suziesStory .img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.suziesStory .img img {
+    margin: 0 auto;
+}
+
+.suziesStory .text {
+    margin: 0 auto;
+    float: none;
+    max-width: 100%;
+}
+
+.suziesStory h2 {
+    font-size: 2.55rem;
+    float: none;
+    margin: 0;
+    padding: 51px 0 0;
+    clear: both;
+}
+
+.suziesStory p {
+    color: #ffffff;
+    float: none;
+    line-height: 1.45rem;
+    margin: 10px 0 25px 0;
+    display: block;
+    clear: both;
+}
+
+.suziesStory a {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    color: #152d20;
+    float: none;
+    padding: 15px 30px;
+    background: #ffffff;
+    border-radius: 1px;
+    transition: all .3s;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    display: inline;
+}
+
+footer {
+    padding-top: 42px;
+}
+
+footer ul {
+    margin: 0 0 100px;
+}
+
+footer li {
+    float: left;
     width: 25%;
+    padding: 0px;
+    text-align: center;
+}
+
+footer li:nth-of-type(2) {
+    display: inline-block;
+}
+
+footer li:nth-of-type(4) {
+    display: none;
+}
+
+.form h3 {
+    font-size: 1.25rem;
 }
 
 #email {
     width: 100%;
+    max-width: 400px;
+    float: none;
+    text-align: center;
+    margin: 0 auto 12px;
+    display: block;
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+}
+
+footer .contact {
+    text-align: center;
+}
+
+footer nav {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact h3 {
+    margin: 42px 0 15px;
+}
+
+.contact p {
+    display: block;
+}
+
+.contact p:nth-of-type(1) {
+    display: inline-block;
+}
+
+.copywrite p {
+    margin: 40px 0 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PHONE MEDIA QUERY */
+@media (max-width:768px) {
+
+header {
+    background: url(assets/image-1-mobile@2x.jpg) center no-repeat;
+    background-size: cover;
+}
+
+header ul {
+    display: none;
+    }
+
+.wrapper {
+    width: 90%;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 29px;
+    float: left;
+    text-align: left;
+    max-width: 50%;
+    display: inline;
+}
+
+.hamMenu {
+    display: inline-block;
+    float: right;
+    margin-top: 21px;
+}
+
+.suziesStory {
+    padding: 51px 0;
+}
+
+.suziesStory h2 {
+    font-size: 1.9rem;
+}
+
+.suziesStory p {
+    font-size: 0.9rem;
+}
+
+.suziesStory a {
+    font-size: 0.9rem;
+    padding: 17px 20px;
+}
+
+.friends {
+    padding: 0 0 51px;
+}
+
+.friends h2 {
+    font-size: 1.9rem;
+    padding: 40px 0 39px;
+}
+
+.friends .img {
+    float: left;
+    margin: 0 9px;
+    max-width: calc(50% - 18px);
+}
+
+.friends .img:nth-child(3) {
+    display: none;
+}
+
+.friends .gallery {
+    margin: 0 -9px;
+}
+
+.threeLinks {
+    padding: 1px;
+}
+
+.threeLinks .wrapper {
+    text-align: center;
+}
+
+.threeLinks .link {
+    width: 100%;
+    float: none;
+    margin: 40px 0;
+}
+
+.imagesAndText .wrapper {
+    margin: 51px auto;
+}
+
+.imagesAndText .text h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    line-height: normal;
+    color: #152d20;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.imagesAndText .text p {
+    font-size: 0.9rem;
+    line-height: 1.45rem;
+    margin-bottom: 50px;
+}
+
+.imagesAndText .text a {
+    font-size: 0.9rem;
+}
+
+footer ul {
+    margin: 0 0 60px;
+}
+
+footer a {
+    font-size: 0.9rem;
+}
+
+.form p {
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+#email {
+    width: 100%;
+    max-width: 400px;
+    float: none;
+    text-align: center;
+    margin: 0 auto 12px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.contact h3 {
+    margin-bottom: 0;
+}
+
+button {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.contact a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+
+.contact p {
+    font-weight: normal;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    margin: 0;
+}
+.copywrite p {
+    margin: 50px 0 0;
+}
 }
