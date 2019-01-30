@@ -49,23 +49,10 @@ ul {
 }
 
 .wrapper {
-    /* border: 1px solid red; */
     width: 85%;
     max-width: 1280px;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* HEADER STYLES START HERE */
@@ -144,16 +131,6 @@ header i:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* SUZIE'S STORY STARTS HERE */
 .suziesStory {
     background: #152d20;
@@ -208,14 +185,6 @@ header i:hover {
 }
 
 
-
-
-
-
-
-
-
-
 /* FRIENDS SECTION STARTS HERE */
 .friends {
     background: #c3d3cb;
@@ -243,13 +212,6 @@ header i:hover {
     max-width: 481px;
     font-weight: lighter;
 }
-
-
-
-
-
-
-
 
 
 /* threeLinks Section Starts HERE */
@@ -289,12 +251,6 @@ header i:hover {
 .link a:hover {
     color: #666666;
 }
-
-
-
-
-
-
 
 
 /* imagesAndText SECTION STARTS HERE */
@@ -346,17 +302,6 @@ header i:hover {
     background: #ffffff;
     color: #152d20;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER STARTS HERE */
@@ -477,6 +422,7 @@ footer a:hover {
     line-height: 1.45rem;
     margin: 0;
 }
+
 .copywrite p {
     text-align: center;
     background: #000000;
@@ -487,24 +433,7 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TABLET MEDIA QUERY STARTS HERE */
+/* FIRST MEDIA QUERY STARTS HERE */
 @media (max-width: 1134px) {
 
 .imagesAndText .text {
@@ -541,21 +470,7 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* TABLET MEDIA QUERY STARTS HERE*/
 @media (max-width: 1037px) {
 header h1 {
     font-size: 4rem;
@@ -586,7 +501,6 @@ header h1 {
 }
 
 .suziesStory p {
-    color: #ffffff;
     float: none;
     line-height: 1.45rem;
     margin: 10px 0 25px 0;
@@ -595,16 +509,8 @@ header h1 {
 }
 
 .suziesStory a {
-    font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    color: #152d20;
     float: none;
-    padding: 15px 30px;
-    background: #ffffff;
-    border-radius: 1px;
-    transition: all .3s;
     margin: 0 auto;
-    clear: both;
     text-align: center;
     display: inline;
 }
@@ -684,24 +590,6 @@ footer nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PHONE MEDIA QUERY */
 @media (max-width:768px) {
 
@@ -724,7 +612,7 @@ header h1 {
     line-height: 29px;
     float: left;
     text-align: left;
-    max-width: 50%;
+    max-width: 30%;
     display: inline;
 }
 
@@ -748,7 +636,8 @@ header h1 {
 
 .suziesStory a {
     font-size: 0.9rem;
-    padding: 17px 20px;
+    padding: 12px 20px;
+    display: table;
 }
 
 .friends {
@@ -793,12 +682,9 @@ header h1 {
 }
 
 .imagesAndText .text h2 {
-    font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
     font-size: 1.1rem;
     line-height: normal;
-    color: #152d20;
-    text-transform: uppercase;
     margin: 0 auto;
     width: 90%;
 }
@@ -861,5 +747,7 @@ button {
 }
 .copywrite p {
     margin: 50px 0 0;
+    font-weight: normal;
+    font-size: 0.7rem;
 }
 }
