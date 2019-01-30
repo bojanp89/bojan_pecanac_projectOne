@@ -512,7 +512,7 @@ header h1 {
     float: none;
     margin: 0 auto;
     text-align: center;
-    display: inline;
+    display: table;
 }
 
 footer {
